@@ -1,0 +1,27 @@
+<div class="container">
+<h2>Listagem de Imóveis</h2>
+<div class="table-responsive">
+<table class="table table-bordered border-primary">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Endereço</th>
+      <th>CEP</th>
+      <th>Cidade</th>
+      <th>Estado</th>
+      <th>Número</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let imovel of imoveis ">
+      <td>{{ imovel.id }}</td>
+      <td>{{ imovel.endereco[0].rua }}</td>
+      <td>{{ imovel.endereco[0].cep }}</td>
+      <td>{{ imovel.endereco[0].cidade }}</td>
+      <td>{{ imovel.endereco[0].uf }}</td>
+      <td>{{ imovel.endereco[0].numero }}</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
